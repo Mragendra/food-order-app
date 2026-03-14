@@ -1,0 +1,21 @@
+.card { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px; display: flex; flex-direction: column; gap: 16px; transition: all 0.25s ease; overflow: hidden; }
+.card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(232,197,71,0.03) 0%, transparent 60%); pointer-events: none; }
+.card:hover { border-color: rgba(232,197,71,0.3); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(0,0,0,0.4); }
+.badge { position: absolute; top: 16px; right: 16px; background: var(--accent2); color: #fff; font-size: 0.65rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 10px; border-radius: 100px; }
+.emoji { font-size: 2.8rem; line-height: 1; }
+.body { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.meta { display: flex; align-items: center; justify-content: space-between; }
+.category { font-size: 0.7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); }
+.rating { font-size: 0.78rem; color: var(--accent); font-weight: 500; }
+.name { font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 1px; color: var(--text); line-height: 1.1; }
+.desc { font-size: 0.82rem; color: var(--text-dim); line-height: 1.6; }
+.stats { display: flex; gap: 12px; margin-top: 4px; }
+.stat { font-size: 0.75rem; color: var(--text-muted); }
+.footer { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid var(--border); }
+.price { font-family: var(--font-display); font-size: 1.6rem; color: var(--accent); letter-spacing: 1px; }
+.controls { display: flex; align-items: center; gap: 8px; }
+.addBtn { background: var(--accent); color: var(--bg); border: none; font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; padding: 8px 20px; border-radius: var(--radius); cursor: pointer; transition: all var(--transition); }
+.addBtn:hover { background: #f0d060; transform: scale(1.03); }
+.qtyBtn { width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface2); color: var(--text); font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all var(--transition); line-height: 1; }
+.qtyBtn:hover { border-color: var(--accent); color: var(--accent); }
+.qty { font-family: var(--font-display); font-size: 1.1rem; color: var(--accent); min-width: 20px; text-align: center; }
