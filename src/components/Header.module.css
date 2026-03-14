@@ -1,0 +1,16 @@
+.header { position: sticky; top: 0; z-index: 100; background: var(--bg); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 64px; backdrop-filter: blur(12px); }
+.logo { display: flex; align-items: baseline; gap: 12px; }
+.logoText { font-family: var(--font-display); font-size: 2rem; color: var(--accent); letter-spacing: 4px; line-height: 1; }
+.logoSub { font-family: var(--font-italic); font-style: italic; font-size: 0.75rem; color: var(--text-dim); letter-spacing: 0.5px; }
+.nav { display: flex; gap: 32px; align-items: center; }
+.navItem { font-size: 0.8rem; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--text-dim); cursor: pointer; transition: color var(--transition); padding: 4px 0; border-bottom: 2px solid transparent; }
+.navItem:hover { color: var(--text); }
+.navActive { color: var(--accent) !important; border-bottom-color: var(--accent); }
+.navKids { color: rgba(224,48,48,0.7); background: rgba(224,48,48,0.08); border: 1px solid rgba(224,48,48,0.2); border-radius: 100px; padding: 4px 14px !important; letter-spacing: 1.5px; transition: all var(--transition); }
+.navKids:hover { color: #e03030 !important; background: rgba(224,48,48,0.15); border-color: rgba(224,48,48,0.4); }
+.navKidsActive { color: #e03030 !important; background: rgba(224,48,48,0.18) !important; border-color: #e03030 !important; }
+.cartBtn { position: relative; display: flex; align-items: center; gap: 8px; background: var(--surface2); border: 1px solid var(--border); color: var(--text); padding: 8px 18px; border-radius: var(--radius); cursor: pointer; font-family: var(--font-body); font-size: 0.85rem; font-weight: 500; transition: all var(--transition); }
+.cartBtn:hover { background: var(--surface); border-color: var(--accent); color: var(--accent); }
+.cartIcon { font-size: 1rem; }
+.cartLabel { letter-spacing: 1px; }
+.cartBadge { position: absolute; top: -8px; right: -8px; background: var(--accent); color: var(--bg); font-size: 0.7rem; font-weight: 600; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
